@@ -52,11 +52,11 @@ def ghadi_bana(ghantaa, minutee, secondd, kalam): #function with 4 parameters
 
 
 while True:
-    ghantaa = int(time.strftime("%I")) #setting the hour from the time module
+    hour = int(time.strftime("%I")) #setting the hour from the time module
     minutee = int(time.strftime("%M")) #setting the minute from the time module
     secondd = int(time.strftime("%S")) #setting the second as above
 
-    ghadi_bana(ghantaa, minutee, secondd, kalam) #calling the ghanta_bana() function with the given parameters
+    ghadi_bana(hour, minutee, secondd, kalam) #calling the ghanta_bana() function with the given parameters
     screen.update() #updating the scren
     time.sleep(1) #making the code sleep for a second with the time module
     kalam.clear() #clearing the pen
